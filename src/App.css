@@ -1,0 +1,149 @@
+:root {
+  margin: 0 auto;
+  color-scheme: light dark;
+  color: rgb(var(--text));
+
+  --border-radius: 8px;
+
+  /* https://uicolors.app/generate/1fb7dd */
+  --color-shakespeare-50: 237, 252, 254;
+  --color-shakespeare-100: 210, 245, 251;
+  --color-shakespeare-200: 170, 234, 247;
+  --color-shakespeare-300: 112, 216, 240;
+  --color-shakespeare-400: 31, 183, 221;
+  --color-shakespeare-500: 18, 161, 200;
+  --color-shakespeare-600: 18, 129, 168;
+  --color-shakespeare-700: 22, 104, 136;
+  --color-shakespeare-800: 27, 85, 111;
+  --color-shakespeare-900: 27, 71, 94;
+  --color-shakespeare-950: 12, 45, 64;
+
+  --color-light: 3, 14, 20;
+  --color-light-menu: 21, 34, 41;
+
+  --color-dark: 246, 249, 250;
+  --color-dark-menu: 212, 217, 219;
+
+  --focus-color: 255, 0, 0;
+}
+
+#root {
+  position: relative;
+  max-width: 100vw;
+  min-height: 100svh;
+  width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: var(--color-light);
+    --background: var(--color-dark);
+    --accent: var(--color-shakespeare-300);
+
+    --primary: var(--color-shakespeare-200);
+    --secondary: var(--color-shakespeare-600);
+    --accentTransparent: var(--color-shakespeare-300);
+    --focus: rgb(var(--focus-color));
+
+    --tabMenu: var(--color-light);
+    --tabMenuFull: var(--color-dark);
+    --tabMenuBackground: var(--color-dark-menu);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: var(--color-dark);
+    --background: var(--color-light);
+    --accent: var(--color-shakespeare-500);
+
+    --primary: var(--color-shakespeare-800);
+    --secondary: var(--color-shakespeare-400);
+    --accentTransparent: var(--color-shakespeare-500);
+    --focus: rgb(var(--focus-color));
+
+    --tabMenu: var(--color-dark);
+    --tabMenuFull: var(--color-light);
+    --tabMenuBackground: var(--color-light-menu);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* ::selection {
+  background: var(--selection);
+} */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgb(var(--background));
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  border-radius: 100rem;
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* *::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  cursor: pointer;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--accent));
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--accent)) var(--grayed);
+  }
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}

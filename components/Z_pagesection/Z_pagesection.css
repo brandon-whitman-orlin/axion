@@ -1,0 +1,33 @@
+.page-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    max-width: 100vw;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+.page-section p {
+    max-width: 70ch;
+    text-align: initial;
+}
+
+.page-section p a {
+    color: rgb(var(--accent));
+    font-weight: 700;
+}
+
+.page-section p a:hover {
+    background-color: rgb(var(--primary));
+    color: rgb(var(--text));
+    padding: 0rem 0.4rem;
+}
+
+.page-section p a:focus-visible {
+    background-color: rgb(var(--primary));
+    padding: 0rem 0.4rem;
+    outline: 3px solid rgb(var(--focus));
+    margin: 0rem 0.5ch;
+}
