@@ -110,33 +110,29 @@ function Modeling() {
 
   return (
     <div className="modeling">
-      <Z_header
-        links={[
-          <a href="/about" rel="noopener noreferrer">
-            About
-          </a>,
-          <a href="/contact" rel="noopener noreferrer">
-            Contact
-          </a>,
-          <div className="dropdown">
-            Options
-            <ul className="dropdown-menu">
-              <li>
-                <a href="/">Test</a>
-              </li>
-              <li>
-                <a href="/">Test</a>
-              </li>
-              <li>
-                <a href="/">Test</a>
-              </li>
-            </ul>
-          </div>,
-        ]}
-        name={"Website Name"}
-        logo={<Logo />}
-      />
-
+            <Z_header
+              links={[
+                <a href="/about" rel="noopener noreferrer">
+                  About
+                </a>,
+                <a href="/contact" rel="noopener noreferrer">
+                  Contact
+                </a>,
+                <div className="dropdown">
+                  Services
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a href="/printing">3D Printing</a>
+                    </li>
+                    <li>
+                      <a href="/modeling">3D Modeling</a>
+                    </li>
+                  </ul>
+                </div>,
+              ]}
+              name={"Axion"}
+              logo={<Logo />}
+            />
       <main className="main">
         <Z_pagesection>
           <h2>3D Modeling</h2>
@@ -302,7 +298,7 @@ function Modeling() {
 
       <footer className="footer">
         <Z_footer
-          name={"Website Name"}
+          name={"Axion"}
           logo={<Logo />}
           children={[
             [

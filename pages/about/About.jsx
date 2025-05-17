@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Home.css";
+import "./About.css";
 
 import Z_header from "../../components/Z_header/Z_header";
 import Z_hero from "../../components/Z_hero/Z_hero";
@@ -10,9 +10,9 @@ import HeroImage from "../../assets/images/hero_home.jpg";
 
 import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
 
-function Home() {
+function About() {
   return (
-    <div className="home">
+    <div className="about">
       <Z_header
         links={[
           <a href="/about" rel="noopener noreferrer">
@@ -68,7 +68,7 @@ function Home() {
       </main>
       <footer className="footer">
         <Z_footer
-          name={"Axion"}
+          name={"Axions"}
           logo={<Logo />}
           children={[
             [
@@ -99,4 +99,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;

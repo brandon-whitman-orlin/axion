@@ -35,6 +35,11 @@
     position: relative;
     height: 100%;
     width: 100%;
+    text-shadow: 
+        0.25rem 0.25rem 0.25rem rgb(var(--background)),
+        -0.25rem -0.25rem 0.25rem rgb(var(--background)),
+        0.25rem -0.25rem 0.25rem rgb(var(--background)),
+        -0.25rem 0.25rem 0.25rem rgb(var(--background));
 }
 
 .hero-content h1 {
