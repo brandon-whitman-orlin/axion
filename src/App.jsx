@@ -6,7 +6,8 @@ import Z_imagebackground from '../scripts/Z_imagebackground';
 import Home from "../pages/home/Home";
 // import About from "../pages/about/About";
 // import Contact from "../pages/contact/Contact";
-import Model_Upload from "../pages/model_upload/Model_Upload";
+import Printing from "../pages/printing/Printing";
+import Modeling from "../pages/modeling/Modeling";
 // import DefaultArticle from "../pages/defaultarticle/DefaultArticle";
 
 import "./App.css"; // Ensure global styles are imported
@@ -19,7 +20,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         {/* <Route path="/about" element={<About />} /> */}
         {/* <Route path="/contact" element={<Contact />} /> */}
-        <Route path="/model_upload" element={<Model_Upload />} />
+        <Route path="/printing" element={<Printing />} />
+        <Route path="/modeling" element={<Modeling />} />
         {/* <Route path="/defaultarticle" element={<DefaultArticle />} /> */}
       </Routes>
     </div>

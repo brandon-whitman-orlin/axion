@@ -175,8 +175,9 @@
     gap: 0.5rem;
     width: fit-content;
     min-width: 100%;
-    width: 5rem;
+    width: fit-content;
     z-index: 2;
+    outline: 0.1rem solid rgb(var(--text));
 }
 
 .dropdown-menu li {
@@ -190,6 +191,8 @@
     display: block;
     border-radius: 0;
     font-size: var(--fontSize);
+    white-space: nowrap;
+    padding: 0.5rem;
 }
 
 .dropdown-menu li:first-of-type a {

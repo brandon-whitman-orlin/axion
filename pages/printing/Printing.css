@@ -1,4 +1,4 @@
-.model_upload {
+.printing {
     display: grid;
     place-items: center;
     align-content: space-between;
@@ -196,4 +196,22 @@ canvas {
 .submit-button:focus-visible {
     border: 0.25rem solid red;
     outline: none;
+}
+
+@media (max-width: 1311px) {
+    .model-upload-inputs {
+        padding: 1rem 11rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .model-upload-inputs {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .model-upload-inputs {
+        padding: 1rem;
+    }
 }

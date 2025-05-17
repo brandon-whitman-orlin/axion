@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Model_Upload.css";
+import "./Printing.css";
 
 import Z_header from "../../components/Z_header/Z_header";
 import Z_pagesection from "../../components/Z_pagesection/Z_pagesection";
@@ -10,7 +10,7 @@ import Model_Viewer from "../../components/model_viewer/Model_Viewer";
 import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
 import { ReactComponent as Plus } from "../../assets/icons/plus.svg";
 
-function Model_Upload() {
+function Printing() {
   const [selectedFiles, setSelectedFiles] = useState([null, null, null, null]);
   const [modelDimensions, setModelDimensions] = useState([
     null,
@@ -119,7 +119,7 @@ function Model_Upload() {
   };
 
   return (
-    <div className="model_upload">
+    <div className="printing">
       <Z_header
         links={[
           <a href="/about" rel="noopener noreferrer">
@@ -276,4 +276,4 @@ function Model_Upload() {
   );
 }
 
-export default Model_Upload;
+export default Printing;

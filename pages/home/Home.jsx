@@ -17,13 +17,11 @@ function Home() {
         links={[
           <a href="/about" rel="noopener noreferrer">About</a>,
           <a href="/contact" rel="noopener noreferrer">Contact</a>,
-          <a href="/model_upload">Model Upload</a>,
           <div className="dropdown">
-            Options
+            Services
             <ul className="dropdown-menu">
-              <li><a href="/">Test</a></li>
-              <li><a href="/">Test</a></li>
-              <li><a href="/">Test</a></li>
+              <li><a href="/printing">3D Printing</a></li>
+              <li><a href="/modeling">3D Modeling</a></li>
             </ul>
           </div>
         ]}
